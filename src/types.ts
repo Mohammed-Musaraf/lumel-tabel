@@ -10,5 +10,6 @@ export interface InventoryData {
     value: number;
     oldValue?: number;
     variance: number;
+    children?: any;
   }[];
 }
