@@ -157,7 +157,7 @@ const Table = () => {
       expanded,
     },
     onExpandedChange: setExpanded,
-    getSubRows: (row) => row.children,
+    getSubRows: (row) => row.children as unknown as InventoryData[],
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
